@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | MasterCraft Carpentry</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="../images/logo.png" alt="Logo">
+    </div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="btn">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container" style="padding:80px 0;">
+  <h1>Get a Quote</h1>
+
+  <!-- NETLIFY FORM -->
+  <form 
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+  >
+
+    <!-- Required hidden input -->
+    <input type="hidden" name="form-name" value="contact">
+
+    <!-- Honeypot -->
+    <p style="display:none;">
+      <label>Don’t fill this out: <input name="bot-field"></label>
+    </p>
+
+    <label>
+      Full Name
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      Email Address
+      <input type="email" name="email" required>
+    </label>
+
+    <label>
+      Phone Number
+      <input type="tel" name="phone">
+    </label>
+
+    <label>
+      Type of Project
+      <select name="project_type">
+        <option>Kitchen</option>
+        <option>Built-in Cupboards</option>
+        <option>Bar / Custom Unit</option>
+        <option>Commercial</option>
+      </select>
+    </label>
+
+    <label>
+      Message
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+
+    <button type="submit" class="btn">Send Request</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>© 2026 MasterCraft Carpentry</p>
+</footer>
+
+</body>
+</html>
