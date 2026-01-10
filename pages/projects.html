@@ -13,40 +13,113 @@
     <div class="logo">
       <img src="../images/logo.png" alt="Logo">
     </div>
-    <nav class="nav">
+    <nav class="nav" id="navMenu">
       <a href="../index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html" class="btn">Get a Quote</a>
     </nav>
+    <div class="menu-toggle" id="menuToggle">
+        ☰
+      </div>
   </div>
 </header>
 
-<section class="container" style="padding:80px 0;">
-  <h1>Our Projects</h1>
+<section class="projects-section">
+  <div class="container">
 
-  <div class="service-grid">
-    <div class="service-card">
-      <h3>Modern Kitchen</h3>
-      <p>Custom cabinets with soft-close finishes.</p>
+    <h1 class="section-title">Our Projects</h1>
+    <p class="section-subtitle">
+      A selection of custom carpentry projects completed for our clients.
+    </p>
+
+    <div class="projects-grid">
+
+      <!-- PROJECT CARD -->
+      <div class="project-card">
+        <img src="../images/projects/kitchen-1.jpg" alt="Custom kitchen cabinetry">
+        <div class="project-content">
+          <h3>Modern Kitchen</h3>
+          <p>
+            Custom-built kitchen with soft-close cabinetry and premium finishes.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="../images/projects/cupboards-1.jpg" alt="Built-in cupboards">
+        <div class="project-content">
+          <h3>Built-in Cupboards</h3>
+          <p>
+            Floor-to-ceiling wardrobes designed to maximize storage space.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="../images/projects/bar-1.jpg" alt="Home bar unit">
+        <div class="project-content">
+          <h3>Custom Home Bar</h3>
+          <p>
+            Bespoke bar unit with integrated lighting and shelving.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="../images/projects/commercial-1.jpg" alt="Commercial reception desk">
+        <div class="project-content">
+          <h3>Commercial Reception</h3>
+          <p>
+            Custom reception counter for a commercial office space.
+          </p>
+          
+          <div class="before-after-project">
+
+  <h2 class="before-after-title">Kitchen Renovation</h2>
+  <p class="before-after-description">
+    Full kitchen transformation including custom cabinetry, finishes, and layout optimization.
+  </p>
+
+  <div class="before-after-container">
+    <img
+      src="../images/projects/kitchen-after.jpg"
+      alt="After renovation"
+      class="after-image"
+    >
+
+    <div class="before-image-wrapper">
+      <img
+        src="../images/projects/kitchen-before.jpg"
+        alt="Before renovation"
+      >
     </div>
 
-    <div class="service-card">
-      <h3>Home Bar</h3>
-      <p>Solid wood bar with storage and lighting.</p>
-    </div>
+    <input
+      type="range"
+      min="0"
+      max="100"
+      value="50"
+      class="slider"
+    >
+  </div>
 
-    <div class="service-card">
-      <h3>Built-in Cupboards</h3>
-      <p>Floor-to-ceiling bedroom cabinetry.</p>
+</div>
+
+          
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
+
 <footer class="footer">
   <p>© 2026 MasterCraft Carpentry</p>
 </footer>
+<script src="../js/main.js"></script>
 
 </body>
 </html>
